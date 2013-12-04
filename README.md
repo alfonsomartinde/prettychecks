@@ -1,34 +1,43 @@
 prettychecks
 ============
 
-Replaces the default user agent checkboxes and radios for custom images
+Replaces the default user agent checkboxes and radios for custom images.
+
+* Chrome, Firefox, Opera, IE7+ compatible
+* Customization freedom
+* Lightweight size - 1 kb gzipped
+* Keyboard accessible inputs
+* Requires jQuery 1.4.2+
 
 How it works?
 -------------
 
 * It will wrap the input element with a span which has a backround image, previously defined in CSS.
 * Add some classes to that span, depending on the input status (checked, disabled, required, etc).
-* Hides the input element with display:none;
+* Hides the input element with css.
 
 Usage
 -----
 
-## HTML
+### HTML
 
-First include jQuery on your page, and then include prettychecks.js
+First include the jQuery library then include the prettychecks.js javascript in the head of the page(s) where you want to use prettychecks
 
 ```javascript
 <script src="prettychecks.js" charset="utf-8"></script>
 ```
 
-## Javascript
+### Javascript
+
+You need to initalize prettychecks:
 
 ```javascript
 $("input[type=checkbox], input[type=radio]").prettychecks();
 ```
 
-## Styling
+### Styling
 
+```css
 .prettychecks {
     width: 13px !important;
     height: 13px !important;
@@ -40,7 +49,6 @@ $("input[type=checkbox], input[type=radio]").prettychecks();
     cursor: pointer !important;
 }
 
-```css
 .prettychecks.checkbox {background-position: -13px 0!important;}
 .prettychecks.checkbox.hover,
 .prettychecks.checkbox:hover,
