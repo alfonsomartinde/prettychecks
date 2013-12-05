@@ -45,9 +45,6 @@
     "type": "git",
     "url": "ssh://git@github.com:alfonsomartinde/prettychecks.git"
   },
-  "scripts": {
-    "postinstall": "./node_modules/.bin/grunt dev"
-  },
   "author": "alfonsomartide",
   "license": "MIT"
 }
