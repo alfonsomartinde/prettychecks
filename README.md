@@ -2,6 +2,7 @@ prettychecks
 ============
 
 Replaces the default user agent checkboxes and radios for custom images.
+Satisfies WCAG 2.0 Level AA conformance.
 
 * Generates valid HTML5 / XHTML code
 * Works with implicit and explicit labels
@@ -10,9 +11,6 @@ Replaces the default user agent checkboxes and radios for custom images.
 * Lightweight size - 1 kb gzipped
 * WCAG2 [Keyboard Accessible][1]: all functionality available from a keyboard.
 * WCAG2 [Focus Visible][2]: the keyboard focus indicator is visible.
-
-[1]: http://www.w3.org/TR/UNDERSTANDING-WCAG20/keyboard-operation.html
-[2]: http://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-focus-visible.html
 
 ### Dependencies
 
@@ -42,7 +40,7 @@ the head of the page(s) where you want to use prettychecks
 
 ### Javascript
 
-If you need to initalize prettychecks for a aspecific checkboxes and radios:
+If you need to initalize prettychecks for a specific checkboxes and radios:
 
 ```javascript
 $( selector ).prettychecks();
@@ -96,10 +94,12 @@ Contributing
 5. Open a [Pull Request][1]
 6. Enjoy a refreshing Diet Coke and wait
 
-[1]: http://github.com/github/markup/pulls
-
 License
 -------
 
 Copyright (c) 2013 [@alfonsomartinde](https://twitter.com/alfonsomartinde) 
 licensed under the [MIT](http://opensource.org/licenses/MIT).
+
+[1]: http://www.w3.org/TR/UNDERSTANDING-WCAG20/keyboard-operation.html
+[2]: http://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-focus-visible.html
+[3]: http://github.com/github/markup/pulls
