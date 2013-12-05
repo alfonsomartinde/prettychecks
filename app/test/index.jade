@@ -1,0 +1,71 @@
+!!! 5
+html(lang='es')
+    head
+        meta(charset='utf-8')
+        title QUnit Main Test Suite
+        link(rel="stylesheet", href="../css/all.css")
+        link(rel="stylesheet", href="qunit/qunit.css")
+        script(src='../js/vendors/jquery.min.js')
+        script(src='../js/jquery.prettychecks.js')
+        script(src='../js/commons.js')
+        script(src='qunit/qunit.js')
+        script(src='js/test.js')
+
+    body
+        #qunit
+        #qunit-fixture test markup
+            main
+                .container
+                    .row
+                        div.span12
+                            h3 Explicit labels
+                    .row
+                        div.span4
+                            input(type="radio", name="testradio1", value="1", class="", id="test1")
+                            label(for="test1") Label test 1
+                        div.span4
+                            input(type="radio", name="testradio1", value="1", class="", id="test2")
+                            label(for="test2") Label test 2
+                        div.span4
+                            input(type="radio", name="testradio1", value="1", class="", id="test3")
+                            label(for="test3") Label test 3
+                    .row
+                        div.span4
+                            input(type="checkbox", name="testcheckbox4", value="1", class="", id="test4")
+                            label(for="test4") Label test 4
+                        div.span4
+                            input(type="checkbox", name="testcheckbox5", value="1", class="", id="test5")
+                            label(for="test5") Label test 5
+                        div.span4
+                            input(type="checkbox", name="testcheckbox6", value="1", class="", id="test6")
+                            label(for="test6") Label test 6
+
+                    .row
+                        div.span12
+                            h3 Implicit labels
+                    .row
+                        div.span4
+                            label(for="test7")
+                                input(type="radio", name="testradio2", value="1", class="", id="test7")
+                                span Label test 7
+                        div.span4
+                            label(for="test8")
+                                input(type="radio", name="testradio2", value="1", class="", id="test8")
+                                span Label test 8
+                        div.span4
+                            label(for="test9")
+                                input(type="radio", name="testradio2", value="1", class="", id="test9")
+                                span Label test 9
+                    .row
+                        div.span4
+                            label(for="test10")
+                                input(type="checkbox", name="testcheckbox10", value="1", class="", id="test10")
+                                span Label test 10
+                        div.span4
+                            label(for="test11")
+                                input(type="checkbox", name="testcheckbox11", value="1", class="", id="test11")
+                                span Label test 11
+                        div.span4
+                            label(for="test12")
+                                input(type="checkbox", name="testcheckbox12", value="1", class="", id="test12")
+                                span Label test 12

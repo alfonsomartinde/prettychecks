@@ -1,0 +1,26 @@
+{
+  "name": "prettychecks",
+  "version": "0.0.2",
+  "description": "Replaces the default User Agent checkboxes and radios for images",
+  "devDependencies": {
+    "matchdep": "~0.1.2",
+    "grunt": "~0.4.1",
+    "grunt-contrib-jshint": "latest",
+    "grunt-contrib-copy": "latest",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-jade": "latest",
+    "grunt-contrib-watch": "latest",
+    "grunt-notify": "latest",
+    "grunt-contrib-less": "latest",
+    "grunt-contrib-uglify": "latest",
+    "grunt-contrib-qunit": "latest",
+    "grunt-devtools": "latest"
+  },
+  "main": "Gruntfile.js",
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com:alfonsomartinde/prettychecks.git"
+  },
+  "author": "alfonsomartide",
+  "license": "MIT"
+}

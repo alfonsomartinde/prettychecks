@@ -1,4 +1,11 @@
+bower
 lib-cov
+node_modules
+pids
+logs
+results
+
+npm-debug.log
 *.seed
 *.log
 *.csv
@@ -7,9 +14,4 @@ lib-cov
 *.pid
 *.gz
 
-pids
-logs
-results
-
-npm-debug.log
-node_modules
+/*.log

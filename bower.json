@@ -1,0 +1,17 @@
+{
+  "name": "prettychecks",
+  "version": "0.0.2",
+  "dependencies": {
+    "qunit": "~1.12.0",
+    "jquery": "~2.0.3"
+  },
+  "ignore": [
+    "**/.*",
+    ".jshintrc",
+    "node_modules",
+    "components",
+    "bower",
+    "test",
+    "tests"
+  ]
+}

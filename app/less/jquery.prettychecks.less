@@ -1,0 +1,183 @@
+.prettychecks {
+    position: relative;
+    display: inline-block;
+    width: 13px !important;
+    height: 13px !important;
+    border: 0 none !important;
+    margin: 4px 4px 0 0px !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+    background: transparent url(../img/sprite-prettychecks.png) no-repeat 0 0 !important;
+    cursor: pointer !important;
+
+    &.checkbox {
+        background-position: -13px 0 !important;
+        &.hover,
+        &:hover{
+            background-position: -13px -13px !important;
+        }
+        &.focus,
+        &:focus {
+            background-position: -39px 0 !important;
+        }
+
+        &.disabled {
+            background-position: -13px -26px !important;
+            &.hover,
+            &:hover{
+                background-position: -13px -26px !important;
+            }
+        }
+
+        &.required {
+            background-position: -13px -39px !important;
+
+            &.hover,
+            &:hover {
+                background-position: -13px -39px !important;
+            }
+            &.focus,
+            &:focus {
+                background-position: -39px -39px !important;
+            }
+        }
+
+        &.error {
+            background-position: -13px -52px !important;
+
+            &.hover,
+            &:hover {
+                background-position: -13px -52px !important;
+            }
+            &.focus,
+            &:focus {
+                background-position: -39px -52px !important;
+            }
+        }
+
+        &.checked {
+            background-position: 0 0 !important;
+
+            &.hover,
+            &:hover {
+                background-position: 0 -13px !important;
+            }
+            &.focus,
+            &:focus {
+                background-position: -26px 0px !important;
+            }
+
+            &.disabled {
+                background-position: 0 -26px !important;
+
+                &.hover,
+                &:hover {
+                    background-position: 0 -26px !important;
+                }
+            }
+
+            &.required {
+                background-position: 0 -39px !important;
+
+                &.hover,
+                &:hover {
+                    background-position: 0 -39px !important;
+                }
+                &.focus,
+                &:focus {
+                    background-position: -26px -39px !important;
+                }
+            }
+
+            &.error {
+                background-position: 0 -52px !important;
+
+                &.hover,
+                &:hover {
+                    background-position: -26px -52px !important;
+                }
+                &.focus,
+                &:focus {
+                    background-position: -26px -52px !important;
+                }
+            }
+        }
+    }
+
+
+    &.radio {
+        background-position: -13px -65px !important;
+
+        &.hover,
+        &:hover {
+            background-position: -13px -78px !important;
+        }
+        &.focus,
+        &:focus {
+            background-position: -39px -65px !important;
+        }
+
+        &.disabled {
+            background-position: -13px -91px !important;
+
+            &.hover,
+            &:hover {
+                background-position: -13px -91px !important;
+            }
+        }
+
+        &.error {
+            background-position: -13px -104px !important;
+
+            &.hover,
+            &:hover {
+                background-position: -13px -78px !important;
+            }
+            &.focus,
+            &:focus {
+                background-position: -13px -78px !important;
+            }
+        }
+
+        &.checked {
+            background-position: 0 -65px !important;
+
+            &.hover,
+            &:hover {
+                background-position: 0 -78px !important;
+            }
+            &.focus,
+            &:focus {
+                background-position: -26px -65px !important;
+            }
+
+            &.disabled {
+                background-position: 0 -91px !important;
+
+                &.hover,
+                &:hover,
+                &:focus {
+                    background-position: 0 -91px !important;
+                }
+            }
+
+            &.error {
+                background-position: 0px -104px !important;
+
+                &.hover,
+                &:hover {
+                    background-position: 0px -104px !important;
+                }
+                &.focus,
+                &:focus {
+                    background-position: -26px -104px !important;
+                }
+            }
+        }
+    }
+
+    input {
+        position: absolute !important;
+        clip: rect(1px, 1px, 1px, 1px);
+    }
+}
