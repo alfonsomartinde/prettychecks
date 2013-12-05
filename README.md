@@ -6,7 +6,7 @@ Satisfies WCAG 2.0 Level AA conformance.
 
 * Generates valid HTML5 / XHTML code
 * Works with implicit and explicit labels
-* Compatible with Chrome, Firefox, Opera and IE7+
+* Compatible with Chrome, Firefox, Opera, Safari and IE7+
 * Customization freedom: the burden is on the CSS
 * Lightweight size - 1 kb gzipped
 * WCAG2 [Keyboard Accessible][1]: all functionality available from a keyboard.
@@ -20,8 +20,8 @@ How it works?
 -------------
 
 * It will wrap the input with a span which has a fake checkbox as a 
-  backround image, previously defined in CSS.
-* Add some classes to that span, depending on the input status (checked, 
+  backround image, previously defined in CSS file.
+* Add class="..." to the wrapper, depending on the input status (checked, 
   disabled, required, error, focus, etc).
 * Hides the input: available to screen reader users, but visually hidden.
 * When inputs gets focus with keyboard, the wrapper is updated with class="focus"
