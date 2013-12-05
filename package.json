@@ -2,9 +2,33 @@
   "name": "prettychecks",
   "version": "0.0.2",
   "description": "Replaces the default User Agent checkboxes and radios for images",
+  "dependencies": {
+    "bower": "latest",
+    "matchdep": "latest",
+    "grunt": "latest",
+    "grunt-cli": "latest",
+    "grunt-contrib-jshint": "latest",
+    "grunt-contrib-concat": "latest",
+    "grunt-contrib-copy": "latest",
+    "grunt-contrib-jade": "latest",
+    "grunt-contrib-watch": "latest",
+    "grunt-notify": "latest",
+    "grunt-contrib-sass": "latest",
+    "grunt-contrib-uglify": "latest",
+    "grunt-contrib-qunit": "latest",
+    "grunt-contrib-connect": "latest",
+    "grunt-open": "latest",
+    "grunt-devtools": "latest",
+    "grunt-contrib-clean": "latest"
+  },
+  "engines": {
+    "node": "0.10.x",
+    "npm": "1.2.x"
+  },
   "devDependencies": {
     "matchdep": "~0.1.2",
     "grunt": "~0.4.1",
+    "grunt-cli": "latest",
     "grunt-contrib-jshint": "latest",
     "grunt-contrib-copy": "latest",
     "grunt-contrib-clean": "~0.5.0",
@@ -20,6 +44,9 @@
   "repository": {
     "type": "git",
     "url": "ssh://git@github.com:alfonsomartinde/prettychecks.git"
+  },
+  "scripts": {
+    "postinstall": "./node_modules/.bin/bower install; ./node_modules/.bin/grunt dev"
   },
   "author": "alfonsomartide",
   "license": "MIT"
