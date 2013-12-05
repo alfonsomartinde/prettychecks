@@ -46,7 +46,7 @@
     "url": "ssh://git@github.com:alfonsomartinde/prettychecks.git"
   },
   "scripts": {
-    "postinstall": "./node_modules/.bin/bower install; ./node_modules/.bin/grunt dev"
+    "postinstall": "./node_modules/.bin/grunt dev"
   },
   "author": "alfonsomartide",
   "license": "MIT"
