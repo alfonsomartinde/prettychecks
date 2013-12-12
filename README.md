@@ -5,6 +5,7 @@ Replaces the default user agent checkboxes and radios for custom images.
 Satisfies WCAG 2.0 Level AA conformance.
 
 * Generates valid HTML5 / XHTML code
+* Retina display compatible
 * Works with implicit and explicit labels
 * Compatible with Chrome, Firefox, Opera, Safari and IE7+
 * Customization freedom: the burden is on the CSS

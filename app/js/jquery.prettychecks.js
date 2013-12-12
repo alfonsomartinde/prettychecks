@@ -43,7 +43,7 @@
          */
         wrapInput: function() {
             var that = this;
-            that.$elm.wrap(function() {
+            this.$elm.wrap(function() {
                 var strClass = that.options.cssClass + 
                     " " + 
                     that.getInputType() + 
@@ -54,15 +54,15 @@
 
                 return "<span class='" + strClass + "'></span>";
             });
-            that.$wrapper = that.$elm.parent(); // that.$wrapper will be that span
+            this.$wrapper = this.$elm.parent(); // this.$wrapper will be this span
         },
 
         addEventsOnWrapper: function() {
             var that = this;
-            if( typeof( that.$wrapper !== "undefined" ) ) {
+            if( typeof( this.$wrapper !== "undefined" ) ) {
 
                 // click
-                that.$wrapper.click(function(ev) {
+                this.$wrapper.click(function(ev) {
                     // If there's no implicit label
                     if (that.$wrapper.parents("label").length === 0) {
                         that.$elm.trigger("click");
@@ -74,26 +74,27 @@
 
         addEventsOnInput: function() {
             var that = this;
-            if( typeof( that.$wrapper !== "undefined" ) ) {
+            if( typeof( this.$wrapper !== "undefined" ) ) {
                 
                 // change
-                that.$elm.change(function(ev){
+                this.$elm.change(function(ev){
                     ev.stopPropagation();
+                    console.log("change");
                     that.toogleAllWrappersClass();
                 });
 
                 // click
-                that.$elm.click(function(ev){
+                this.$elm.click(function(ev){
                     ev.stopPropagation();
                 });
 
                 // focus
-                that.$elm.focus(function() {
+                this.$elm.focus(function() {
                     that.$wrapper.addClass("focus");
                 });
 
                 // blur
-                that.$elm.blur(function() {
+                this.$elm.blur(function() {
                     that.$wrapper.removeClass("focus");
                 });
 
@@ -104,8 +105,7 @@
          * Toogle all wrappers with an input with same name inside
          */
         toogleAllWrappersClass: function() {
-            var that = this;
-            $("." + that._name + "." + that.getInputName() ).each( function( i ) {
+            $("." + this._name + "." + this.getInputName() ).each( function( i ) {
                 if( $( this ).find("input:checked").length > 0 ) {
                     $( this ).addClass( "checked" );
                 } else {
@@ -119,8 +119,7 @@
          * @return {boolean}
          */
         isInputChecked: function() {
-            var that = this;
-            return ( that.$elm.attr('checked') ) ? true : false;
+            return ( this.$elm.attr('checked') ) ? true : false;
         },
 
        /**
@@ -128,8 +127,7 @@
          * @return {boolean}
          */
         isInputDisabled: function() {
-            var that = this;
-            return ( that.$elm.attr('disabled') ) ? true : false;
+            return ( this.$elm.attr('disabled') ) ? true : false;
         },
 
        /**
@@ -137,8 +135,7 @@
          * @return {string}
          */
         getInputType: function() {
-            var that = this;
-            return that.$elm.attr('type') || "";
+            return this.$elm.attr('type') || "";
         },
 
         /**
@@ -146,8 +143,7 @@
          * @return {string}
          */
         getInputName: function() {
-            var that = this;
-            return that.$elm.attr('name') || "";
+            return this.$elm.attr('name') || "";
         },
 
         /**
@@ -155,18 +151,16 @@
          * @return {string}
          */
         getInputStatus: function() {
-            var that = this,
-                inputStatus = "";
+            var inputStatus = "";
             inputStatus += ( this.isInputChecked() ? " checked" : "" );
             inputStatus += ( this.isInputDisabled() ? " disabled" : "" );
             return inputStatus;
         },
 
         init: function() {
-            var that = this;
-            that.wrapInput();
-            that.addEventsOnInput();
-            that.addEventsOnWrapper();
+            this.wrapInput();
+            this.addEventsOnInput();
+            this.addEventsOnWrapper();
         }
 
     };
