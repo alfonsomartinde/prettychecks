@@ -3,6 +3,7 @@
   "version": "0.0.2",
   "description": "Replaces the default User Agent checkboxes and radios for images",
   "dependencies": {
+    "express": "latest",
     "bower": "latest",
     "matchdep": "latest",
     "grunt": "latest",
@@ -26,6 +27,7 @@
     "npm": "1.2.x"
   },
   "devDependencies": {
+    "express": "~3.4.7",
     "matchdep": "~0.1.2",
     "grunt": "~0.4.1",
     "grunt-contrib-jshint": "latest",
