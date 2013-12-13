@@ -1,20 +1,29 @@
-process.env.PWD = process.cwd();
-var express = require("express");
-var app = express();
-app.use(express.logger());
+var express = require( "express" ),
+    app = express(),
+    port = process.env.PORT || 3000;
 
-app.configure(function() {
-    app.use(express.cookieParser());
+process.env.PWD = process.cwd()
+
+app.configure(function(){
+    app.use(express.static( process.env.PWD + '/dev' ));
     app.use(express.bodyParser());
+    app.use(express.methodOverride());
+
+    //Error Handling
+    app.use(express.logger());
+    app.use(express.errorHandler({
+            dumpExceptions: true, 
+            showStack: true
+    }));
+
     app.use(app.router);
-    app.use(express.static(process.env.PWD + '/dev'));
 });
 
-app.get('/', function(request, response) {
-    response.send('Server OK!');
+app.get('/', function(req, res){
+    res.redirect( "/html/index.html" );
+    //res.render("index.html")
 });
 
-var port = process.env.PORT || 9000;
 app.listen(port, function() {
-    console.log("Listening on " + port);
+    console.log( "Listening on " + port );
 });
