@@ -2,6 +2,7 @@
   "name": "prettychecks",
   "version": "0.0.3",
   "description": "Replaces the default User Agent checkboxes and radios for images",
+  "homepage": "https://github.com/alfonsomartinde/prettychecks",
   "dependencies": {
     "express": "latest",
     "bower": "latest",
@@ -45,6 +46,9 @@
     "type": "git",
     "url": "ssh://git@github.com:alfonsomartinde/prettychecks.git"
   },
-  "author": "alfonsomartide",
+  "author": {
+    "name": "alfonsomartinde",
+    "url": "https://twitter.com/alfonsomartinde"
+  },
   "license": "MIT"
 }

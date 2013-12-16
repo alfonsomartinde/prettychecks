@@ -29,7 +29,11 @@
                         mangle: {
                             except: ['_', 'jQuery', 'Backbone']
                         },
-                        banner: '/*! <%= pkg.name %> - v<%= pkg.version %> - <%= grunt.template.today("yyyy-mm-dd") %> */'
+                        banner: '/*! <%= pkg.title || pkg.name %> - v<%= pkg.version %> - ' +
+                            '<%= grunt.template.today("m/d/yyyy") %>\\n' +
+                            '<%= pkg.homepage ? "* " + pkg.homepage + "\\n" : "" %>' +
+                            '* Copyright (c) <%= grunt.template.today("yyyy") %> <%= pkg.author.name %>;' +
+                            ' Licensed <%= _.pluck(pkg.license, "type").join(", ") %> */'
                     },
                     files: {
                         'pro/js/jquery.prettychecks.min.js': ['dev/js/jquery.prettychecks.js'],
@@ -205,7 +209,9 @@
                         // '--cookies-file': 'misc/cookies.txt',
                         //urls: ['http://localhost:<%= connect.server.options.port %>/dev/test/index.html']
                     },
-                    files: ['dev/test/index.html']
+                    files: [
+                        { src: "dev/test/index.html" }
+                    ]
                 }
             },
 
