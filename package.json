@@ -3,6 +3,23 @@
     "version": "0.0.4",
     "description": "Replaces the default User Agent checkboxes and radios for images",
     "homepage": "https://github.com/alfonsomartinde/prettychecks",
+    "main": "Gruntfile.js",
+    "license": "MIT",
+    "author": {
+        "name": "alfonsomartinde",
+        "url": "https://twitter.com/alfonsomartinde"
+    },
+    "repository": {
+        "type": "git",
+        "url": "ssh://git@github.com:alfonsomartinde/prettychecks.git"
+    },
+    "scripts": {
+        "test": "grunt test"
+    },
+    "engines": {
+        "node": "0.10.x",
+        "npm": "1.2.x"
+    },
     "dependencies": {
         "express": "latest",
         "bower": "latest",
@@ -21,10 +38,6 @@
         "grunt-devtools": "latest",
         "grunt-contrib-connect": "latest"
     },
-    "engines": {
-        "node": "0.10.x",
-        "npm": "1.2.x"
-    },
     "devDependencies": {
         "express": "~3.4.7",
         "matchdep": "~0.1.2",
@@ -40,15 +53,5 @@
         "grunt-contrib-qunit": "latest",
         "grunt-devtools": "latest",
         "grunt-contrib-connect": "latest"
-    },
-    "main": "Gruntfile.js",
-    "repository": {
-        "type": "git",
-        "url": "ssh://git@github.com:alfonsomartinde/prettychecks.git"
-    },
-    "author": {
-        "name": "alfonsomartinde",
-        "url": "https://twitter.com/alfonsomartinde"
-    },
-    "license": "MIT"
+    }
 }

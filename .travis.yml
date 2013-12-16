@@ -1,6 +1,6 @@
 language: node_js
 node_js:
   - "0.10"
-script: 
-  - grunt test
-  - phantomjs phantom-qunit-test-runner.js http://localhost:3000/dev/test/index.html
+install:
+  - bower install
+  - npm install grunt-cli -g

@@ -204,13 +204,11 @@
             qunit: {
                 all: {
                     options: {
-                        timeout: 100,
+                        //timeout: 100,
                         // '--cookies-file': 'misc/cookies.txt',
-                        urls: ['http://localhost:<%= connect.server.options.port %>/dev/test/index.html']
+                        //urls: ['http://localhost:<%= connect.server.options.port %>/dev/test/index.html']
                     },
-                    files: [
-                        // { src: "dev/test/index.html" }
-                    ]
+                    files: ['dev/test/index.html']
                 }
             },
 
@@ -313,8 +311,8 @@
                 "copy:dev",
                 "jade:dev",
                 "less:dev",
-                "connect:server:keepalive",
-                //"qunit"
+                //"connect:server:keepalive",
+                "qunit"
             ]);
         });
 
