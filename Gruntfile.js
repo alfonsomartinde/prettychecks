@@ -313,8 +313,8 @@
                 "copy:dev",
                 "jade:dev",
                 "less:dev",
-                "connect:server",
-                "qunit"
+                "connect:server:keepalive",
+                //"qunit"
             ]);
         });
 

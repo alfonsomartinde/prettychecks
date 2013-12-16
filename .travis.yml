@@ -2,5 +2,5 @@ language: node_js
 node_js:
   - "0.10"
 script: 
-  - grunt test --verbose
-  - phantomjs phantom-qunit-test-runner.js dev/test/index.html 100
+  - grunt test
+  - phantomjs phantom-qunit-test-runner.js http://localhost:3000/dev/test/index.html
