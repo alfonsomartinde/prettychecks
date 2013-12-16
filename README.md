@@ -104,6 +104,9 @@ Contributing
 
 Help us!
 --------
+
+Buy us a beer (Paypal)
+
 [![Click here to lend your support to: jQuery Prettychecks Plugin and make a donation at pledgie.com !](https://pledgie.com/campaigns/23329.png?skin_name=chrome)](https://pledgie.com/campaigns/23329)
 
 

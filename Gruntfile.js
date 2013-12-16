@@ -314,7 +314,7 @@
                 "copy:dev",
                 "jade:dev",
                 "less:dev",
-                "connect:server",
+                //"connect:server",
                 "qunit"
             ]);
         });
