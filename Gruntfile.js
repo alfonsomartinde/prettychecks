@@ -201,7 +201,7 @@
             qunit: {
                 all: {
                     options: {
-                        timeout: 10000,
+                        timeout: 500,
                         // '--cookies-file': 'misc/cookies.txt',
                         urls: [
                           'http://localhost:<%= connect.server.options.port %>/dev/test/index.html',
