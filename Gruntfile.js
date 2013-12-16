@@ -208,7 +208,9 @@
                         // '--cookies-file': 'misc/cookies.txt',
                         //urls: ['http://localhost:<%= connect.server.options.port %>/dev/test/index.html']
                     },
-                    files: ['dev/test/index.html']
+                    files: [
+                        { src: "dev/test/index.html" }
+                    ]
                 }
             },
 
