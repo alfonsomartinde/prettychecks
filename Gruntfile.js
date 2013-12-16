@@ -203,11 +203,9 @@
                     options: {
                         timeout: 500,
                         // '--cookies-file': 'misc/cookies.txt',
-                        urls: [
-                          'http://localhost:<%= connect.server.options.port %>/dev/test/index.html',
-                        ]
+                        //urls: ['http://localhost:<%= connect.server.options.port %>/dev/test/index.html']
                     },
-                    //files: ['dev/test/index.html']
+                    files: ['dev/test/index.html']
                 }
             },
 
