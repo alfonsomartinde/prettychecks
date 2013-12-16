@@ -1,54 +1,54 @@
 {
-  "name": "prettychecks",
-  "version": "0.0.3",
-  "description": "Replaces the default User Agent checkboxes and radios for images",
-  "homepage": "https://github.com/alfonsomartinde/prettychecks",
-  "dependencies": {
-    "express": "latest",
-    "bower": "latest",
-    "matchdep": "latest",
-    "grunt": "latest",
-    "grunt-cli": "latest",
-    "grunt-contrib-jshint": "latest",
-    "grunt-contrib-copy": "latest",
-    "grunt-contrib-clean": "latest",
-    "grunt-contrib-jade": "latest",
-    "grunt-contrib-watch": "latest",
-    "grunt-notify": "latest",
-    "grunt-contrib-less": "latest",
-    "grunt-contrib-uglify": "latest",
-    "grunt-contrib-qunit": "latest",
-    "grunt-devtools": "latest",
-    "grunt-contrib-connect": "latest"
-  },
-  "engines": {
-    "node": "0.10.x",
-    "npm": "1.2.x"
-  },
-  "devDependencies": {
-    "express": "~3.4.7",
-    "matchdep": "~0.1.2",
-    "grunt": "~0.4.1",
-    "grunt-contrib-jshint": "latest",
-    "grunt-contrib-copy": "latest",
-    "grunt-contrib-clean": "latest",
-    "grunt-contrib-jade": "latest",
-    "grunt-contrib-watch": "latest",
-    "grunt-notify": "latest",
-    "grunt-contrib-less": "latest",
-    "grunt-contrib-uglify": "latest",
-    "grunt-contrib-qunit": "latest",
-    "grunt-devtools": "latest",
-    "grunt-contrib-connect": "latest"
-  },
-  "main": "Gruntfile.js",
-  "repository": {
-    "type": "git",
-    "url": "ssh://git@github.com:alfonsomartinde/prettychecks.git"
-  },
-  "author": {
-    "name": "alfonsomartinde",
-    "url": "https://twitter.com/alfonsomartinde"
-  },
-  "license": "MIT"
+    "name": "prettychecks",
+    "version": "0.0.3",
+    "description": "Replaces the default User Agent checkboxes and radios for images",
+    "homepage": "https://github.com/alfonsomartinde/prettychecks",
+    "dependencies": {
+        "express": "latest",
+        "bower": "latest",
+        "matchdep": "latest",
+        "grunt": "latest",
+        "grunt-cli": "latest",
+        "grunt-contrib-jshint": "latest",
+        "grunt-contrib-copy": "latest",
+        "grunt-contrib-clean": "latest",
+        "grunt-contrib-jade": "latest",
+        "grunt-contrib-watch": "latest",
+        "grunt-notify": "latest",
+        "grunt-contrib-less": "latest",
+        "grunt-contrib-uglify": "latest",
+        "grunt-contrib-qunit": "latest",
+        "grunt-devtools": "latest",
+        "grunt-contrib-connect": "latest"
+    },
+    "engines": {
+        "node": "0.10.x",
+        "npm": "1.2.x"
+    },
+    "devDependencies": {
+        "express": "~3.4.7",
+        "matchdep": "~0.1.2",
+        "grunt": "~0.4.1",
+        "grunt-contrib-jshint": "latest",
+        "grunt-contrib-copy": "latest",
+        "grunt-contrib-clean": "latest",
+        "grunt-contrib-jade": "latest",
+        "grunt-contrib-watch": "latest",
+        "grunt-notify": "latest",
+        "grunt-contrib-less": "latest",
+        "grunt-contrib-uglify": "latest",
+        "grunt-contrib-qunit": "latest",
+        "grunt-devtools": "latest",
+        "grunt-contrib-connect": "latest"
+    },
+    "main": "Gruntfile.js",
+    "repository": {
+        "type": "git",
+        "url": "ssh://git@github.com:alfonsomartinde/prettychecks.git"
+    },
+    "author": {
+        "name": "alfonsomartinde",
+        "url": "https://twitter.com/alfonsomartinde"
+    },
+    "license": "MIT"
 }
