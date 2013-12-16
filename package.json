@@ -1,6 +1,6 @@
 {
   "name": "prettychecks",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Replaces the default User Agent checkboxes and radios for images",
   "dependencies": {
     "express": "latest",
@@ -9,18 +9,16 @@
     "grunt": "latest",
     "grunt-cli": "latest",
     "grunt-contrib-jshint": "latest",
-    "grunt-contrib-concat": "latest",
     "grunt-contrib-copy": "latest",
+    "grunt-contrib-clean": "latest",
     "grunt-contrib-jade": "latest",
     "grunt-contrib-watch": "latest",
     "grunt-notify": "latest",
-    "grunt-contrib-sass": "latest",
+    "grunt-contrib-less": "latest",
     "grunt-contrib-uglify": "latest",
     "grunt-contrib-qunit": "latest",
-    "grunt-contrib-connect": "latest",
-    "grunt-open": "latest",
     "grunt-devtools": "latest",
-    "grunt-contrib-clean": "latest"
+    "grunt-contrib-connect": "latest"
   },
   "engines": {
     "node": "0.10.x",
@@ -32,13 +30,13 @@
     "grunt": "~0.4.1",
     "grunt-contrib-jshint": "latest",
     "grunt-contrib-copy": "latest",
-    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-clean": "latest",
     "grunt-contrib-jade": "latest",
     "grunt-contrib-watch": "latest",
     "grunt-notify": "latest",
     "grunt-contrib-less": "latest",
     "grunt-contrib-uglify": "latest",
-    "grunt-contrib-qunit": "~0.3.0",
+    "grunt-contrib-qunit": "latest",
     "grunt-devtools": "latest",
     "grunt-contrib-connect": "latest"
   },

@@ -191,23 +191,24 @@
             // Server for "test" task (Travis)
             connect: {
                 server: {
-                        options: {
-                                port: 3000,
-                                base: './'
-                        }
+                    options: {
+                        port: 3000
+                    }
                 }
             },
 
             // Configuramos los test
             qunit: {
-                options: {
-                    timeout: 10000,
-                    // '--cookies-file': 'misc/cookies.txt'
-                },
-                urls: [
-                  'http://localhost:3000/dev/test/index.html',
-                ]
-                //files: ['dev/test/index.html']
+                all: {
+                    options: {
+                        timeout: 10000,
+                        // '--cookies-file': 'misc/cookies.txt',
+                        urls: [
+                          'http://localhost:<%= connect.server.options.port %>/dev/test/index.html',
+                        ]
+                    },
+                    //files: ['dev/test/index.html']
+                }
             },
 
             notify: {
@@ -286,7 +287,7 @@
                 "copy:dev",
                 "jade:dev",
                 "less:dev",
-                "connect",
+                "connect:server",
                 //"qunit",
                 "watch",
             ]);
@@ -309,7 +310,7 @@
                 "copy:dev",
                 "jade:dev",
                 "less:dev",
-                "connect",
+                "connect:server",
                 "qunit"
             ]);
         });

@@ -15,6 +15,10 @@ Satisfies WCAG 2.0 Level AA conformance.
 * WCAG2 [Keyboard Accessible][1]: all functionality available from a keyboard.
 * WCAG2 [Focus Visible][2]: the keyboard focus indicator is visible.
 
+### Current version
+
+* 0.0.3
+
 ### Dependencies
 
 * Requires jQuery 1.4.2+ or 2.0.3 +
