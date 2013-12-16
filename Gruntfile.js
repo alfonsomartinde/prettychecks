@@ -288,5 +288,16 @@
             ]);
         });
 
+        grunt.registerTask("test", function (target) {
+            grunt.task.run([
+                "clean:dev",
+                "jshint",
+                "copy:dev",
+                "jade:dev",
+                "less:dev",
+                "qunit"
+            ]);
+        });
+
     };
 }());

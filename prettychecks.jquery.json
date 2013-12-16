@@ -1,0 +1,28 @@
+{
+  "name": "prettychecks",
+  "title": "jQuery Prettychecks Plugin",
+  "description": "A jQuery Plugin to make pretty radio buttons and checkboxes.",
+  "keywords": [
+    "pretty",
+    "radio",
+    "checkbox",
+    "input"
+  ],
+  "version": "0.0.1",
+  "author": {
+    "name": "alfonsomartinde",
+    "url": "https://github.com/alfonsomartinde/prettychecks/blob/master/README.md"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/alfonsomartinde/prettychecks/blob/master/dev/js/jquery.prettychecks.js"
+    }
+  ],
+  "bugs": "https://github.com/alfonsomartinde/prettychecks/issues",
+  "homepage": "https://github.com/alfonsomartinde/prettychecks",
+  "docs": "https://github.com/alfonsomartinde/prettychecks/",
+  "dependencies": {
+    "jquery": ">=1.4.2"
+  }
+}
