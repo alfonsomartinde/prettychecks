@@ -318,5 +318,17 @@
             ]);
         });
 
+        grunt.event.on('qunit.fail.load', function (url) {
+            grunt.log.ok("Error loading: " + url);
+        });
+
+        grunt.event.on('qunit.fail.timeout', function () {
+            grunt.log.ok("QUnit test times out: " + url);
+        });
+
+        grunt.event.on('qunit.spawn', function (url) {
+            grunt.log.ok("Running PhantomJS test: " + url);
+        });
+
     };
 }());
