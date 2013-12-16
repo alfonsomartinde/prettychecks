@@ -55,7 +55,6 @@
                 }
             },
 
-
             copy: {
                 dev: {
                     files: [
@@ -292,7 +291,7 @@
                 "jade:dev",
                 "less:dev",
                 "connect:server",
-                //"qunit",
+                "qunit",
                 "watch",
             ]);
         });
@@ -315,7 +314,7 @@
                 "jade:dev",
                 "less:dev",
                 //"connect:server",
-                "qunit"
+                //"qunit"
             ]);
         });
 
