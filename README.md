@@ -1,5 +1,7 @@
-prettychecks
-============
+jQuery prettychecks plugin
+==========================
+
+[![Build Status](https://travis-ci.org/igorescobar/jQuery-Mask-Plugin.png)](https://travis-ci.org/igorescobar/jQuery-Mask-Plugin)
 
 Replaces the default user agent checkboxes and radios for custom images.
 Satisfies WCAG 2.0 Level AA conformance.

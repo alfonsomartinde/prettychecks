@@ -1,7 +1,7 @@
 {
   "name": "prettychecks",
   "title": "jQuery Prettychecks Plugin",
-  "description": "A jQuery Plugin to make pretty radio buttons and checkboxes.",
+  "description": "Replaces the default user agent checkboxes and radios for custom images.",
   "keywords": [
     "pretty",
     "radio",

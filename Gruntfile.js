@@ -186,7 +186,17 @@
                         cwd: "app/jade/"
                     }]
                 }  
-            }, 
+            },
+
+            // Server for "test" task (Travis)
+            connect: {
+                server: {
+                        options: {
+                                port: 9001,
+                                base: './'
+                        }
+                }
+            },
 
             // Configuramos los test
             qunit: {
@@ -194,7 +204,10 @@
                     timeout: 10000,
                     // '--cookies-file': 'misc/cookies.txt'
                 },
-                files: ['dev/test/index.html']
+                urls: [
+                  'http://localhost:3000/test/index.html',
+                ]
+                //files: ['dev/test/index.html']
             },
 
             notify: {
@@ -295,6 +308,7 @@
                 "copy:dev",
                 "jade:dev",
                 "less:dev",
+                "connect",
                 "qunit"
             ]);
         });
