@@ -1,8 +1,6 @@
 language: node_js
 node_js:
   - "0.10"
-before_script:
-  - phantomjs --version
 script: 
-  - grunt dev --verbose
-  - phantomjs phantom-qunit-test-runner.js dev/test/index.html
+  - grunt test --verbose
+  - phantomjs phantom-qunit-test-runner.js dev/test/index.html 100

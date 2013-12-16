@@ -206,10 +206,10 @@
                     options: {
                         timeout: 100,
                         // '--cookies-file': 'misc/cookies.txt',
-                        //urls: ['http://localhost:<%= connect.server.options.port %>/dev/test/index.html']
+                        urls: ['http://localhost:<%= connect.server.options.port %>/dev/test/index.html']
                     },
                     files: [
-                        { src: "dev/test/index.html" }
+                        // { src: "dev/test/index.html" }
                     ]
                 }
             },
@@ -313,8 +313,8 @@
                 "copy:dev",
                 "jade:dev",
                 "less:dev",
-                //"connect:server",
-                //"qunit"
+                "connect:server",
+                "qunit"
             ]);
         });
 
@@ -323,7 +323,7 @@
         });
 
         grunt.event.on('qunit.fail.timeout', function () {
-            grunt.log.ok("QUnit test times out: " + url);
+            grunt.log.ok("QUnit test times out");
         });
 
         grunt.event.on('qunit.spawn', function (url) {
