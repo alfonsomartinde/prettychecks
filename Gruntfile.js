@@ -319,16 +319,24 @@
         });
 
         grunt.event.on('qunit.fail.load', function (url) {
-            grunt.log.ok("Error loading: " + url);
+            grunt.log.ok("Error loading URL: " + url);
         });
 
         grunt.event.on('qunit.fail.timeout', function () {
-            grunt.log.ok("QUnit test times out");
+            grunt.log.ok("QUnit times out");
         });
 
         grunt.event.on('qunit.spawn', function (url) {
             grunt.log.ok("Running PhantomJS test: " + url);
         });
+
+        grunt.event.on('qunit.error.onError', function (message, stackTrace) {
+            grunt.log.ok("------------------------------------------");
+            grunt.log.ok("QUnit Error: " + message);
+            grunt.log.ok("stackTrace: " + message);
+            grunt.log.ok("------------------------------------------");
+        });
+
 
     };
 }());
