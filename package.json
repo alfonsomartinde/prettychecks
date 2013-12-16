@@ -38,8 +38,9 @@
     "grunt-notify": "latest",
     "grunt-contrib-less": "latest",
     "grunt-contrib-uglify": "latest",
-    "grunt-contrib-qunit": "latest",
-    "grunt-devtools": "latest"
+    "grunt-contrib-qunit": "~0.3.0",
+    "grunt-devtools": "latest",
+    "grunt-contrib-connect": "latest"
   },
   "main": "Gruntfile.js",
   "repository": {

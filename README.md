@@ -1,7 +1,7 @@
 jQuery prettychecks plugin
 ==========================
 
-[![Build Status](https://travis-ci.org/igorescobar/jQuery-Mask-Plugin.png)](https://travis-ci.org/igorescobar/jQuery-Mask-Plugin)
+[![Build Status](https://api.travis-ci.org/alfonsomartinde/prettychecks.png)](https://travis-ci.org/alfonsomartinde/prettychecks)
 
 Replaces the default user agent checkboxes and radios for custom images.
 Satisfies WCAG 2.0 Level AA conformance.
@@ -96,6 +96,12 @@ Contributing
 4. Push to the branch (`git push origin my_markup`)
 5. Open a [Pull Request][1]
 6. Enjoy a refreshing Diet Coke and wait
+
+
+Help us!
+--------
+[![Click here to lend your support to: jQuery Prettychecks Plugin and make a donation at pledgie.com !](https://pledgie.com/campaigns/23329.png?skin_name=chrome)](https://pledgie.com/campaigns/23329)
+
 
 License
 -------

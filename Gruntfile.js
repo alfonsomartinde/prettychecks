@@ -192,7 +192,7 @@
             connect: {
                 server: {
                         options: {
-                                port: 9001,
+                                port: 3000,
                                 base: './'
                         }
                 }
@@ -205,7 +205,7 @@
                     // '--cookies-file': 'misc/cookies.txt'
                 },
                 urls: [
-                  'http://localhost:3000/test/index.html',
+                  'http://localhost:3000/dev/test/index.html',
                 ]
                 //files: ['dev/test/index.html']
             },
@@ -286,7 +286,8 @@
                 "copy:dev",
                 "jade:dev",
                 "less:dev",
-                "qunit",
+                "connect",
+                //"qunit",
                 "watch",
             ]);
         });
