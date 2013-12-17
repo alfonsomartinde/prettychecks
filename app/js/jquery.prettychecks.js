@@ -57,6 +57,9 @@
             this.$wrapper = this.$elm.parent(); // this.$wrapper will be this span
         },
 
+        /**
+         * Add events on wrapper <span>: click
+         */
         addEventsOnWrapper: function() {
             var that = this;
             if( typeof( this.$wrapper !== "undefined" ) ) {
@@ -72,6 +75,9 @@
             }
         },
 
+        /**
+         * Add events on inputs: change, click, focus and blur
+         */
         addEventsOnInput: function() {
             var that = this;
             if( typeof( this.$wrapper !== "undefined" ) ) {
