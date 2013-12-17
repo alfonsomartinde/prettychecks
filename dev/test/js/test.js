@@ -1,25 +1,89 @@
-if ( window.sessionStorage ) {
+(function () {
+    var PRETTY = {
+        actions: {
+            uncheckThis: function ( ev, $el ) {
+                $el.removeClass( 'checked' );
+            },
+            uncheckParent: function ( ev, $el ) {
+                $el.parent().removeClass( 'checked' );
+            },
+            checkThis: function ( ev, $el ) {
+                $el.addClass( 'checked' );
+            },
+            checkParent: function ( ev, $el ) {
+                $el.parent().addClass( 'checked' );
+            }
+        }
+    };
+
+    // clear sessionStorage
+    if ( window.sessionStorage ) {
         sessionStorage.clear();
-}
+    }
 
-module( "Globals" );
-test( "Libraries loaded on global scope", function() {
-    ok( typeof($ !== "undefined") , "jQuery loaded!" );
-});
-/*
-module( "Radios" );
-test( "Parent <span> changes to 'checked' when click on <input>", function() {
+    // init
+    (function() {
+        $(document).on( 'click', '#test2', function ( ev ) {
+            ev.stopPropagation();
+            if( $(this).parent().hasClass("checked") === true ) {
+                PRETTY.actions.uncheckParent.apply( PRETTY, [ev, $(this)] );
+            } else {
+                PRETTY.actions.checkParent.apply( PRETTY, [ev, $(this)] );
+            }
+        });
+        $(document).on( 'click', '.prettychecks', function ( ev ) {
+            ev.stopPropagation();
+            if( $(this).hasClass("checked") === true ) {
+                PRETTY.actions.uncheckThis.apply( PRETTY, [ev, $(this)] );
+            } else {
+                PRETTY.actions.checkThis.apply( PRETTY, [ev, $(this)] );
+            }
+        });
+    }());
 
-    var $input = $( "#test2" ),
-        $parent = $input.parent();
+    // test
+    module( "Radios" );
+    test( "Parent is <span>", function() {
+        var $input = $( "#test2" )
+                .parent()
+                .hasClass( "checked" );
 
-    ok( $parent.hasClass("checked") === false , "<span> has not class='checked'..." );
-    
-    $parent.trigger("click");
-    ok( $parent.hasClass("checked") === true , "... after click, <span> has now class='checked'... " );
+        deepEqual( $input, false , "<span>" );
+    });
+    test( "After click on <input>, parent toggles <span class='checked'>", function( ) {
+        var $input = $( "#test2" )
+                .trigger( "click" )
+                .parent()
+                .hasClass( "checked" );
 
-    $parent.trigger("click");
-    ok( $parent.hasClass("checked") === false , "... after one more click, <span> has not class='checked'" );
+        deepEqual( $input, true , "<span class='checked'>" );
+    });
+    test( "After click again on <input>, parent toggles <span>", function( ) {
+        var $input = $( "#test2" )
+                .trigger( "click" )
+                .trigger( "click" )
+                .parent()
+                .hasClass( "checked" );
 
-});
-*/
+        deepEqual( $input, false , "<span>" );
+    });
+
+    test( "After click on <span>, toggles <span class='checked'>", function( ) {
+        var $span = $( "#test2" )
+                .parent()
+                .trigger( "click" )
+                .hasClass( "checked" );
+
+        deepEqual( $span, true , "<span class='checked'>" );
+    });
+    test( "After click again on <span>, toggles <span>", function( ) {
+        var $span = $( "#test2" )
+                .parent()
+                .trigger( "click" )
+                .trigger( "click" )
+                .hasClass( "checked" );
+
+        deepEqual( $span, false , "<span>" );
+    });
+
+}());

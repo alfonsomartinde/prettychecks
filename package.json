@@ -1,6 +1,6 @@
 {
     "name": "prettychecks",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "description": "Replaces the default User Agent checkboxes and radios for images",
     "homepage": "https://github.com/alfonsomartinde/prettychecks",
     "main": "Gruntfile.js",

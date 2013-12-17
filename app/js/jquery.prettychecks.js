@@ -85,7 +85,6 @@
                 // change
                 this.$elm.change(function(ev){
                     ev.stopPropagation();
-                    console.log("change");
                     that.toogleAllWrappersClass();
                 });
 
