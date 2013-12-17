@@ -36,6 +36,14 @@ How it works?
 Usage
 -----
 
+### Images
+
+Default sprite is a PNG with all the checkboxes and radiobuttons status: normal, normal-checked, focus, focus-checked, error, error-checked, error-focus, error-focus-checked, etc... The size of all images is 13x13px 72ppp.
+
+![spryte-prettychecks](https://github.com/alfonsomartinde/prettychecks/blob/master/app/img/sprite-prettychecks.png?raw=true)
+
+You can design your own sprites, with custom sizes, even with retina display resolution, and just update the CSS.
+
 ### HTML
 
 First include the jQuery library then include the prettychecks.js javascript in 
@@ -45,7 +53,7 @@ the head of the page(s) where you want to use prettychecks
 <script src="prettychecks.js" charset="utf-8"></script>
 ```
 
-### Javascript
+### JS
 
 If you need to initalize prettychecks for a specific checkboxes and radios:
 
@@ -59,7 +67,7 @@ If you need to initalize prettychecks for all checkboxes and radios:
 $("input[type=checkbox], input[type=radio]").prettychecks();
 ```
 
-### Styling
+### CSS
 
 ```css
 /* Define the width, height and url of the sprite */
