@@ -44,13 +44,41 @@
 
             // Comprobamos errores
             jshint: {
-                files: ['Gruntfile.js','app/js/**/*.js','app/test/**/*.js'],
+                files: ['app/js/**/*.js','app/test/**/*.js'],
                 options: {
                     ignores: ['app/js/vendors/*.js'],
+                    curly: true,
+                    eqeqeq: true,
+                    immed: true,
+                    latedef: true,
+                    newcap: true,
+                    noarg: true,
+                    sub: true,
+                    undef: true,
+                    eqnull: true,
+                    browser: true,
                     globals: {
+                        $: true,
                         jQuery: true,
+                        QUnit: true,
                         console: true,
-                        module: true
+                        module: true,
+                        test: true,
+                        start: true,
+                        stop: true,
+                        expect: true,
+                        ok: true,
+                        equal: true,
+                        deepEqual: true,
+                        strictEqual: true,
+                        require: true
+                    }
+                },
+                grunt: {
+                    files: {
+                        src: [
+                            'Gruntfile.js'
+                        ]
                     }
                 }
             },
