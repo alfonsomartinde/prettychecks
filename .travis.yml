@@ -4,5 +4,7 @@ node_js:
 install:
   - npm install -g bower
   - bower install
+before_script:
+  - npm install
 script:
   - grunt test
