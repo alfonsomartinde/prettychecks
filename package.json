@@ -37,10 +37,8 @@
     },
     "devDependencies": {
         "express": "~3.4.7",
-        "bower": "latest",
         "matchdep": "~0.1.2",
         "grunt": "latest",
-        "grunt-cli": "latest",
         "grunt-contrib-jshint": "latest",
         "grunt-contrib-copy": "latest",
         "grunt-contrib-clean": "latest",
