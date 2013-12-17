@@ -13,9 +13,6 @@
         "type": "git",
         "url": "ssh://git@github.com:alfonsomartinde/prettychecks.git"
     },
-    "scripts": {
-        "test": "grunt test"
-    },
     "engines": {
         "node": "0.10.x",
         "npm": "1.2.x"
