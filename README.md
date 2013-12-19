@@ -50,7 +50,7 @@ First include the jQuery library then include the prettychecks.js javascript in
 the head of the page(s) where you want to use prettychecks
 
 ```javascript
-<script src="prettychecks.js" charset="utf-8"></script>
+<script src="jquery.prettychecks.js" charset="utf-8"></script>
 ```
 
 ### JS
