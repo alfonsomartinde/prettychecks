@@ -73,6 +73,8 @@ $("input[type=checkbox], input[type=radio]").prettychecks();
 /* Define the width, height and url of the sprite */
 
 .prettychecks {
+    position: relative;
+    display: inline-block;
     width: 13px !important;
     height: 13px !important;
     border: 0 none !important;
@@ -83,17 +85,77 @@ $("input[type=checkbox], input[type=radio]").prettychecks();
     cursor: pointer !important;
 }
 
+.prettychecks input {
+    position: absolute !important;
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
 /* Define the background-position for all status */
 
 .prettychecks.checkbox {background-position: -13px 0 !important;}
 .prettychecks.checkbox.hover,
-.prettychecks.checkbox:hover,
-.prettychecks.checkbox:focus {background-position: -13px -13px !important;}
-
+.prettychecks.checkbox:hover {background-position: -13px -13px !important;}
+.prettychecks.checkbox.focus,
+.prettychecks.checkbox:focus {background-position: -39px 0 !important;}
+.prettychecks.checkbox.disabled {background-position: -13px -26px !important;}
+.prettychecks.checkbox.disabled.hover,
+.prettychecks.checkbox.disabled:hover {background-position: -13px -26px !important;}
+.prettychecks.checkbox.required {background-position: -13px -39px !important;}
+.prettychecks.checkbox.required.hover,
+.prettychecks.checkbox.required:hover {background-position: -13px -39px !important;}
+.prettychecks.checkbox.required.focus,
+.prettychecks.checkbox.required:focus {background-position: -39px -39px !important;}
+.prettychecks.checkbox.error {background-position: -13px -52px !important;}
+.prettychecks.checkbox.error.hover,
+.prettychecks.checkbox.error:hover {background-position: -13px -52px !important;}
+.prettychecks.checkbox.error.focus,
+.prettychecks.checkbox.error:focus {background-position: -39px -52px !important;}
 .prettychecks.checkbox.checked {background-position: 0 0 !important;}
 .prettychecks.checkbox.checked.hover,
-.prettychecks.checkbox.checked:hover,
-.prettychecks.checkbox.checked:focus {background-position: 0 -13px !important;}
+.prettychecks.checkbox.checked:hover {background-position: 0 -13px !important;}
+.prettychecks.checkbox.checked.focus,
+.prettychecks.checkbox.checked:focus {background-position: -26px 0px !important;}
+.prettychecks.checkbox.checked.disabled {background-position: 0 -26px !important;}
+.prettychecks.checkbox.checked.disabled.hover,
+.prettychecks.checkbox.checked.disabled:hover {background-position: 0 -26px !important;}
+.prettychecks.checkbox.checked.required {background-position: 0 -39px !important;}
+.prettychecks.checkbox.checked.required.hover,
+.prettychecks.checkbox.checked.required:hover {background-position: 0 -39px !important;}
+.prettychecks.checkbox.checked.required.focus,
+.prettychecks.checkbox.checked.required:focus {background-position: -26px -39px !important;}
+.prettychecks.checkbox.checked.error {background-position: 0 -52px !important;}
+.prettychecks.checkbox.checked.error.hover,
+.prettychecks.checkbox.checked.error:hover {background-position: -26px -52px !important;}
+.prettychecks.checkbox.checked.error.focus,
+.prettychecks.checkbox.checked.error:focus {background-position: -26px -52px !important;}
+
+.prettychecks.radio {background-position: -13px -65px !important;}
+.prettychecks.radio.hover,
+.prettychecks.radio:hover {background-position: -13px -78px !important;}
+.prettychecks.radio.focus,
+.prettychecks.radio:focus {background-position: -39px -65px !important;}
+.prettychecks.radio.disabled {background-position: -13px -91px !important;}
+.prettychecks.radio.disabled.hover,
+.prettychecks.radio.disabled:hover {background-position: -13px -91px !important;}
+.prettychecks.radio.error {background-position: -13px -104px !important;}
+.prettychecks.radio.error.hover,
+.prettychecks.radio.error:hover {background-position: -13px -78px !important;}
+.prettychecks.radio.error.focus,
+.prettychecks.radio.error:focus {background-position: -13px -78px !important;}
+.prettychecks.radio.checked {background-position: 0 -65px !important;}
+.prettychecks.radio.checked.hover,
+.prettychecks.radio.checked:hover {background-position: 0 -78px !important;}
+.prettychecks.radio.checked.focus,
+.prettychecks.radio.checked:focus {background-position: -26px -65px !important;}
+.prettychecks.radio.checked.disabled {background-position: 0 -91px !important;}
+.prettychecks.radio.checked.disabled.hover,
+.prettychecks.radio.checked.disabled:hover,
+.prettychecks.radio.checked.disabled:focus {background-position: 0 -91px !important;}
+.prettychecks.radio.checked.error {background-position: 0px -104px !important;}
+.prettychecks.radio.checked.error.hover,
+.prettychecks.radio.checked.error:hover {background-position: 0px -104px !important;}
+.prettychecks.radio.checked.error.focus,
+.prettychecks.radio.checked.error:focus {background-position: -26px -104px !important;}
 
 /* ... rest of CSS ... */
 
