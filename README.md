@@ -17,7 +17,7 @@ Satisfies WCAG 2.0 Level AA conformance.
 
 ### Current version
 
-* 0.0.5
+* 0.0.6
 
 ### Dependencies
 
@@ -183,7 +183,7 @@ Buy us a beer (Paypal)
 License
 -------
 
-Copyright (c) 2013 [@alfonsomartinde](https://twitter.com/alfonsomartinde) 
+Copyright (c) 2014 [@alfonsomartinde](https://twitter.com/alfonsomartinde) 
 licensed under the [MIT](http://opensource.org/licenses/MIT).
 
 [1]: http://www.w3.org/TR/UNDERSTANDING-WCAG20/keyboard-operation.html
