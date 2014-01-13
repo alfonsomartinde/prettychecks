@@ -17,7 +17,7 @@ Satisfies WCAG 2.0 Level AA conformance.
 
 ### Current version
 
-* 0.0.6
+* 0.0.7
 
 ### Dependencies
 
