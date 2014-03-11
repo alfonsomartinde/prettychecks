@@ -1,6 +1,7 @@
 bower
 lib-cov
 node_modules
+heroku-client
 pids
 logs
 results

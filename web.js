@@ -2,7 +2,7 @@ var express = require( "express" ),
     app = express.createServer(),
     port = process.env.PORT || 3000;
 
-process.env.PWD = process.cwd()
+process.env.PWD = process.cwd();
 
 app.configure(function(){
     app.use(express.static( process.env.PWD + '/dev' ));
@@ -21,7 +21,7 @@ app.configure(function(){
 
 app.get('/', function(req, res){
     res.redirect( "html/index.html" );
-    res.render( "index.html" )
+    res.render( "index.html" );
 });
 
 app.listen(port, function() {
