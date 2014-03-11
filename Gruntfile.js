@@ -365,7 +365,7 @@
             grunt.log.ok("------------------------------------------");
         });
 
-        grunt.event.on('heroku', function (url) {
+        grunt.registerTask("heroku", function (target) {
             grunt.task.run([
                 "clean:dev",
                 "jshint",
