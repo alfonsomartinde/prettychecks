@@ -14,10 +14,10 @@
         "url": "ssh://git@github.com:alfonsomartinde/prettychecks.git"
     },
     "engines": {
-        "node": "0.10.x",
+        "node": "0.10.x"
     },
     "scripts": {
-        "postinstall": "./node_modules/bower/bin/bower install -s"
+        "postinstall": "./node_modules/bower/bin/bower install"
     },
     "dependencies": {
         "express": "latest",
