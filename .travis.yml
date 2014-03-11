@@ -3,7 +3,7 @@ node_js:
   - "0.10"
 install:
   - npm install -g bower
-  - bower install
+  - bower install -s
 before_script:
   - npm install
 script:
