@@ -365,6 +365,15 @@
             grunt.log.ok("------------------------------------------");
         });
 
+        grunt.event.on('heroku', function (url) {
+            grunt.task.run([
+                "clean:dev",
+                "jshint",
+                "copy:dev",
+                "jade:dev",
+                "less:dev"
+            ]);
+        });
 
     };
 }());

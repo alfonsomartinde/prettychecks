@@ -1,5 +1,5 @@
 var express = require( "express" ),
-    app = express(),
+    app = express.createServer(),
     port = process.env.PORT || 3000;
 
 process.env.PWD = process.cwd()
@@ -12,16 +12,16 @@ app.configure(function(){
     //Error Handling
     app.use(express.logger());
     app.use(express.errorHandler({
-            dumpExceptions: true, 
-            showStack: true
+        dumpExceptions: true, 
+        showStack: true
     }));
 
     app.use(app.router);
 });
 
 app.get('/', function(req, res){
-    res.redirect( "/html/index.html" );
-    //res.render("index.html")
+    res.redirect( "html/index.html" );
+    res.render( "index.html" )
 });
 
 app.listen(port, function() {
